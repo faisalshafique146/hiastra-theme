@@ -1,0 +1,21 @@
+{
+	"name": "HiAstra Theme",
+	"version": 1,
+	"enabled": true,
+	"accent": "#55D6E6",
+	"surfaces": {
+		"editor": "#151326",
+		"panel": "#201C3A",
+		"active": "#2A2450"
+	},
+	"tokens": [
+		{ "kind": "keyword", "color": "#B89CFF" },
+		{ "kind": "function", "color": "#6FA8FF" },
+		{ "kind": "string", "color": "#72E0B2" }
+	],
+	"features": {
+		"semanticHighlighting": true,
+		"maxPreviewLines": 80,
+		"experimental": false
+	}
+}

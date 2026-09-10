@@ -1,0 +1,24 @@
+# Exclude everything, including future development files, by default.
+# Negated entries below are the only project files allowed in the VSIX.
+**
+
+# Extension metadata and Marketplace documentation.
+!package.json
+!README.md
+!CHANGELOG.md
+
+# Include the chosen license and required notices once they exist.
+!LICENSE
+!LICENSE.txt
+!LICENSE.md
+!NOTICE
+!NOTICE.txt
+!NOTICE.md
+
+# Runtime theme asset and the exact PNG icon configured in package.json.
+!themes/HiAstra Theme-color-theme.json
+!images/icon.png
+
+# Tests, .vscode tools, audits, dependencies, logs, credentials, source artwork,
+# starter docs, and previous VSIX files remain excluded by the first rule.
+# Add exact asset paths here if the theme or packaged documentation needs them.

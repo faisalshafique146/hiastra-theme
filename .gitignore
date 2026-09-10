@@ -1,0 +1,39 @@
+# Dependencies and generated output. Keep package-manager lockfiles in Git.
+node_modules/
+dist/
+out/
+coverage/
+.nyc_output/
+.cache/
+
+# Downloaded VS Code test hosts and packaged release artifacts.
+.vscode-test/
+.vscode-test-web/
+*.vsix
+
+# Local credentials and environment files; never commit publishing tokens.
+.env
+.env.*
+!.env.example
+.npmrc
+.vsce
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Logs, temporary files, and OS metadata.
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local editor preferences. Keep shared launch configuration and test tools.
+.vscode/settings.json
+.idea/
+.history/

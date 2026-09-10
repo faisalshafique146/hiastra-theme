@@ -1,0 +1,38 @@
+/* HiAstra CSS token fixture */
+:root {
+	--editor-bg: #151326;
+	--accent: #55D6E6;
+	--radius: 0.75rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body.theme-page {
+	background: var(--editor-bg);
+	color: #F4F2FF;
+	font-family: "Segoe UI", sans-serif;
+	margin: 0;
+}
+
+#preview .hero,
+.card[data-accent="#55D6E6"] {
+	border: 1px solid var(--accent);
+	border-radius: var(--radius);
+	padding: 2rem;
+	transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.hero:hover {
+	background: rgba(42, 36, 80, 0.8);
+	transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+	.hero { padding: 1rem; }
+	.card::before { content: "mobile"; color: #72E0B2; }
+}
+
+/* TODO: inspect selectors, properties, units, functions, colors, and media queries. */
+

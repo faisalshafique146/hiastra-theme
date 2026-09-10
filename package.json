@@ -1,0 +1,48 @@
+{
+  "name": "hiastra-theme",
+  "displayName": "HiAstra Theme",
+  "description": "A vibrant dark theme with deep violet backgrounds, colorful syntax, and a calm interface designed for readable, focused coding.",
+  "version": "0.1.0",
+  "publisher": "hi-soft-tech",
+  "license": "UNLICENSED",
+  "engines": {
+    "vscode": "^1.136.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "hiastra",
+    "dark theme",
+    "color theme",
+    "dark",
+    "colorful",
+    "vibrant",
+    "purple",
+    "syntax highlighting",
+    "semantic highlighting"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/REPLACE_WITH_GITHUB_OWNER/REPLACE_WITH_REPOSITORY_NAME.git"
+  },
+  "homepage": "https://github.com/REPLACE_WITH_GITHUB_OWNER/REPLACE_WITH_REPOSITORY_NAME#readme",
+  "bugs": {
+    "url": "https://github.com/REPLACE_WITH_GITHUB_OWNER/REPLACE_WITH_REPOSITORY_NAME/issues"
+  },
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#151326",
+    "theme": "dark"
+  },
+  "pricing": "Free",
+  "contributes": {
+    "themes": [
+      {
+        "label": "HiAstra Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/HiAstra Theme-color-theme.json"
+      }
+    ]
+  }
+}
