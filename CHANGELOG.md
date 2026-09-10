@@ -24,7 +24,11 @@ Planned initial release: **0.1.0**. No published release is recorded yet.
 ### Changed
 
 - Refined contrast, comments, selections, focus states, and diagnostic colors while preserving the existing palette.
+- Added magenta UI borders and active-tab top/bottom indicators, with softer inactive dividers.
 
 ### Fixed
 
 - Conflicting syntax rules affecting CSS selectors and values, Python decorators and calls, shell commands, and Markdown inline code.
+- Darkened active selections to improve contrast when syntax foreground colors are retained, and made inactive selections translucent to preserve underlying decorations.
+- Preserved inherited bold/italic styles when applying semantic deprecated-token strikethrough.
+- Hid draft screenshot placeholders from the rendered README until real images are supplied.

@@ -70,30 +70,30 @@ The regression suite checks 55 color/style cases across these ten fixtures using
 
 See the [visual test fixtures in the repository](https://github.com/REPLACE_WITH_GITHUB_OWNER/REPLACE_WITH_REPOSITORY_NAME/tree/HEAD/theme-tests) for what to inspect; development fixtures are not included in the VSIX. Markdown styling refers to the source editor, not the rendered preview. HiAstra supplies colors, not language servers or diagnostics.
 
-## Screenshots
+<!-- Maintainer task: replace the HTTPS PNG URL placeholders below, then remove
+this enclosing comment to display the screenshot section. Use real editor
+captures and identify any separate font or file-icon theme used in them.
 
-<!-- Replace each placeholder with a real HTTPS PNG image URL, then uncomment
-the image markup and remove the corresponding placeholder paragraph. -->
+## Screenshots
 
 ### Editor and workbench
 
-*Screenshot placeholder: React TSX with Explorer, active and inactive tabs, breadcrumbs, and the status bar.*
+Show React TSX, Explorer, active/inactive tabs, breadcrumbs, and the status bar.
 
-<!-- ![HiAstra showing React TSX and the dark workbench](REPLACE_WITH_HTTPS_WORKBENCH_SCREENSHOT_PNG_URL) -->
+![HiAstra showing React TSX and the dark workbench](REPLACE_WITH_HTTPS_WORKBENCH_SCREENSHOT_PNG_URL)
 
 ### Web development
 
-*Screenshot placeholder: HTML and CSS side by side, showing tags, attributes, selectors, custom properties, and values.*
+Show HTML and CSS side by side, including selectors and custom properties.
 
-<!-- ![HiAstra showing HTML and CSS syntax colors](REPLACE_WITH_HTTPS_WEB_SCREENSHOT_PNG_URL) -->
+![HiAstra showing HTML and CSS syntax colors](REPLACE_WITH_HTTPS_WEB_SCREENSHOT_PNG_URL)
 
 ### Scripts and documentation
 
-*Screenshot placeholder: Python and Markdown source, showing decorators, comments, headings, links, and inline code.*
+Show Python decorators and Markdown source with headings, links, and inline code.
 
-<!-- ![HiAstra showing Python and Markdown source](REPLACE_WITH_HTTPS_SCRIPTS_SCREENSHOT_PNG_URL) -->
-
-Use unaltered editor captures and identify any separate font or file-icon theme used in them.
+![HiAstra showing Python and Markdown source](REPLACE_WITH_HTTPS_SCRIPTS_SCREENSHOT_PNG_URL)
+-->
 
 ## Feedback and issues
 

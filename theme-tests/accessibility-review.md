@@ -2,6 +2,8 @@
 
 Reviewed 2026-09-09. Scope: the theme JSON and its declared colors/rules. This is a static review with calculated contrast, not a live VS Code rendering test or certification.
 
+Historical snapshot: subsequent edits changed UI borders to magenta. The 2026-09-10 release audit also changed editor selections. Do not treat the older cyan-border or selection measurements below as current. In particular, `editor.selectionForeground` is documented for high-contrast selection text; normal syntax foregrounds must be checked against the selection background as well. The new `#2A2450` selection gives muted comments 4.53:1 (previously 3.62:1 on `#3A3268`). See `../RELEASE-AUDIT.md` for the current findings.
+
 ## Findings and decisions
 
 - Keep the deep indigo editor background and the existing vivid accent palette. The eight accents measure 7.29–11.60:1 against the editor. None needs a blanket saturation reduction; perceived glare still depends on brightness, font, monitor, and the person viewing it.

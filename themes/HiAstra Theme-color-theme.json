@@ -21,9 +21,9 @@
 		"editorCursor.background": "#151326",
 		"editor.lineHighlightBackground": "#1E1A38",
 		"editor.lineHighlightBorder": "#15132600",
-		"editor.selectionBackground": "#3A3268",
+		"editor.selectionBackground": "#2A2450",
 		"editor.selectionForeground": "#F4F2FF",
-		"editor.inactiveSelectionBackground": "#2A2450",
+		"editor.inactiveSelectionBackground": "#2A245080",
 		"editor.selectionHighlightBackground": "#B89CFF08",
 		"editor.wordHighlightBackground": "#B89CFF08",
 		"editor.wordHighlightStrongBackground": "#55D6E608",
@@ -723,7 +723,7 @@
 			}
 		},
 		{
-			"name": "Markdown - Fenced Bode Block",
+			"name": "Markdown - Fenced Code Block",
 			"scope": [
 				"punctuation.definition.fenced.markdown"
 			],
@@ -732,7 +732,7 @@
 			}
 		},
 		{
-			"name": "Markdown - Fenced Bode Block Variable",
+			"name": "Markdown - Fenced Code Block Variable",
 			"scope": [
 				"markup.raw.block.fenced.markdown",
 				"variable.language.fenced.markdown",
@@ -1275,7 +1275,7 @@
 		},
 		"*.deprecated": {
 			"foreground": "#FF7A8A",
-			"fontStyle": "strikethrough"
+			"strikethrough": true
 		}
 	}
 }
