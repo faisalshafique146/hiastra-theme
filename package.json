@@ -4,6 +4,7 @@
   "description": "A vibrant dark theme with deep violet backgrounds, colorful syntax, and a calm interface designed for readable, focused coding.",
   "version": "0.1.0",
   "publisher": "hi-soft-tech",
+  "author": "Faisal Shafique",
   "license": "UNLICENSED",
   "engines": {
     "vscode": "^1.136.0"
@@ -24,11 +25,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/REPLACE_WITH_GITHUB_OWNER/REPLACE_WITH_REPOSITORY_NAME.git"
+    "url": "https://github.com/faisalshafique146/hiastra-theme.git"
   },
-  "homepage": "https://github.com/REPLACE_WITH_GITHUB_OWNER/REPLACE_WITH_REPOSITORY_NAME#readme",
+  "homepage": "https://github.com/faisalshafique146/hiastra-theme#readme",
   "bugs": {
-    "url": "https://github.com/REPLACE_WITH_GITHUB_OWNER/REPLACE_WITH_REPOSITORY_NAME/issues"
+    "url": "https://github.com/faisalshafique146/hiastra-theme/issues"
   },
   "icon": "images/icon.png",
   "galleryBanner": {

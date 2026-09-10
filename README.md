@@ -68,7 +68,7 @@ HiAstra includes language-specific TextMate styling and test fixtures for:
 
 The regression suite checks 55 color/style cases across these ten fixtures using the development installation's bundled VS Code grammars. This verifies TextMate output, not every language extension or semantic provider. Other languages receive the theme's shared scope styles, but have not received the same focused testing.
 
-See the [visual test fixtures in the repository](https://github.com/REPLACE_WITH_GITHUB_OWNER/REPLACE_WITH_REPOSITORY_NAME/tree/HEAD/theme-tests) for what to inspect; development fixtures are not included in the VSIX. Markdown styling refers to the source editor, not the rendered preview. HiAstra supplies colors, not language servers or diagnostics.
+See the [visual test fixtures in the repository](https://github.com/faisalshafique146/hiastra-theme/tree/HEAD/theme-tests) for what to inspect; development fixtures are not included in the VSIX. Markdown styling refers to the source editor, not the rendered preview. HiAstra supplies colors, not language servers or diagnostics.
 
 ## Screenshots
 
@@ -110,7 +110,7 @@ Mint selectors, cyan custom properties, warm values and units, and media queries
 
 ## Feedback and issues
 
-Found a hard-to-read token or an inconsistent UI color? [Open an issue](https://github.com/REPLACE_WITH_GITHUB_OWNER/REPLACE_WITH_REPOSITORY_NAME/issues) with:
+Found a hard-to-read token or an inconsistent UI color? [Open an issue](https://github.com/faisalshafique146/hiastra-theme/issues) with:
 
 - Your VS Code and HiAstra versions, operating system, and relevant language extensions.
 - A small code example and its language mode.
@@ -122,7 +122,7 @@ For syntax issues, **Developer: Inspect Editor Tokens and Scopes** can help iden
 
 ## Contributing
 
-Focused improvements to scope coverage, readability, documentation, and test fixtures are welcome. Start in the [repository](https://github.com/REPLACE_WITH_GITHUB_OWNER/REPLACE_WITH_REPOSITORY_NAME); discuss larger palette changes in an issue first.
+Focused improvements to scope coverage, readability, documentation, and test fixtures are welcome. Start in the [repository](https://github.com/faisalshafique146/hiastra-theme); discuss larger palette changes in an issue first.
 
 For theme changes, preserve the existing color families, add or update a small fixture, and compare semantic highlighting both on and off in the Extension Development Host. Include before-and-after screenshots in your pull request.
 
