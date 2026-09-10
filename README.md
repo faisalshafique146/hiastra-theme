@@ -128,6 +128,6 @@ For theme changes, preserve the existing color families, add or update a small f
 
 ## License
 
-**Release license: REPLACE_WITH_CHOSEN_LICENSE.**
+Licensed under the [MIT License](LICENSE).
 
-The manifest currently uses `UNLICENSED`; an open-source license has not yet been selected. Before release, replace this section with the chosen license and a link to the corresponding license file, and update `package.json` to match.
+Copyright (c) 2026 Faisal Shafique.
