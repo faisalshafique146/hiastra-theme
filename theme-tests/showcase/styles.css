@@ -1,0 +1,35 @@
+/* HiAstra / CSS — selectors, custom properties, and values */
+:root {
+  --background: #151326;
+  --surface: #1e1a38;
+  --foreground: #f4f2ff;
+  --accent: #f08acb;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, sans-serif;
+}
+
+.palette { max-width: 64rem; margin: 4rem auto; padding: 2rem; }
+.palette__header h1 { font-size: clamp(2rem, 5vw, 4rem); }
+.swatches { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+
+.swatch {
+  padding: 1.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  background: var(--surface);
+  transition: border-color 160ms ease;
+}
+
+.swatch[data-kind="function"] code { color: #6fa8ff; }
+.swatch[data-kind="string"] code { color: #72e0b2; }
+.swatch:hover { border-color: #55d6e6; }
+.eyebrow, footer { color: #c7c3df; }
+
+@media (max-width: 640px) {
+  .swatches { grid-template-columns: 1fr; }
+}

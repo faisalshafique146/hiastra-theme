@@ -9,6 +9,8 @@ coverage/
 # Downloaded VS Code test hosts and packaged release artifacts.
 .vscode-test/
 .vscode-test-web/
+.vscode/screenshot-profile/
+.vscode/screenshot-extensions/
 *.vsix
 
 # Local credentials and environment files; never commit publishing tokens.

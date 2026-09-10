@@ -19,6 +19,13 @@
 !themes/HiAstra Theme-color-theme.json
 !images/icon.png
 
+# Real HiAstra screenshots used by README.md; source fixtures stay excluded.
+!images/screenshots/typescript.png
+!images/screenshots/javascript.png
+!images/screenshots/python.png
+!images/screenshots/html.png
+!images/screenshots/css.png
+
 # Tests, .vscode tools, audits, dependencies, logs, credentials, source artwork,
 # starter docs, and previous VSIX files remain excluded by the first rule.
 # Add exact asset paths here if the theme or packaged documentation needs them.

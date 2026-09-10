@@ -20,6 +20,7 @@ Planned initial release: **0.1.0**. No published release is recorded yet.
 - Vibrant syntax highlighting for JavaScript, TypeScript, JSX, TSX, HTML, CSS, JSON, Python, Markdown, and shell scripts.
 - Semantic token styles coordinated with the TextMate palette.
 - Installation documentation and language fixtures for visual theme testing.
+- Five real VS Code screenshots for TypeScript, JavaScript, Python, HTML, and CSS, with compact showcase source files.
 
 ### Changed
 

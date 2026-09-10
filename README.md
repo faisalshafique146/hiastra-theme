@@ -70,30 +70,43 @@ The regression suite checks 55 color/style cases across these ten fixtures using
 
 See the [visual test fixtures in the repository](https://github.com/REPLACE_WITH_GITHUB_OWNER/REPLACE_WITH_REPOSITORY_NAME/tree/HEAD/theme-tests) for what to inspect; development fixtures are not included in the VSIX. Markdown styling refers to the source editor, not the rendered preview. HiAstra supplies colors, not language servers or diagnostics.
 
-<!-- Maintainer task: replace the HTTPS PNG URL placeholders below, then remove
-this enclosing comment to display the screenshot section. Use real editor
-captures and identify any separate font or file-icon theme used in them.
-
 ## Screenshots
 
-### Editor and workbench
+Captured in VS Code's Extension Development Host using the current HiAstra theme.
+These are real editor screenshots, not mockups or color-enhanced images. The
+capture profile uses Consolas at 17 px, 24 px line height, no file-icon theme,
+and no minimap or color-decorator swatches. Semantic highlighting is configured
+by the theme; Python uses the built-in TextMate grammar without a Python language server.
 
-Show React TSX, Explorer, active/inactive tabs, breadcrumbs, and the status bar.
+### TypeScript
 
-![HiAstra showing React TSX and the dark workbench](REPLACE_WITH_HTTPS_WORKBENCH_SCREENSHOT_PNG_URL)
+Interfaces, generics, readonly properties, and methods against the dark workbench.
 
-### Web development
+![HiAstra TypeScript highlighting with purple types, blue methods, and pink active-tab borders](images/screenshots/typescript.png)
 
-Show HTML and CSS side by side, including selectors and custom properties.
+### JavaScript
 
-![HiAstra showing HTML and CSS syntax colors](REPLACE_WITH_HTTPS_WEB_SCREENSHOT_PNG_URL)
+Async functions, classes, object properties, regular expressions, and template strings.
 
-### Scripts and documentation
+![HiAstra JavaScript highlighting with mint strings, warm properties, and blue functions](images/screenshots/javascript.png)
 
-Show Python decorators and Markdown source with headings, links, and inline code.
+### Python
 
-![HiAstra showing Python and Markdown source](REPLACE_WITH_HTTPS_SCRIPTS_SCREENSHOT_PNG_URL)
--->
+Dataclasses, decorators, annotations, f-strings, and control flow.
+
+![HiAstra Python highlighting with magenta decorators, readable docstrings, and blue calls](images/screenshots/python.png)
+
+### HTML
+
+Semantic structure, coral tags, gold attributes, entities, and mint attribute values.
+
+![HiAstra HTML highlighting with coral tags and gold attributes](images/screenshots/html.png)
+
+### CSS
+
+Mint selectors, cyan custom properties, warm values and units, and media queries.
+
+![HiAstra CSS highlighting with mint selectors, cyan properties, and orange values](images/screenshots/css.png)
 
 ## Feedback and issues
 
