@@ -12,6 +12,20 @@ omit empty categories. Do not mark planned changes as already released.
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-09-11
+
+### Added
+
+- Focused PHP, Java, C#, C, C++, Go, and Rust TextMate coverage alongside JavaScript, TypeScript, and Python, forming a core set of ten programming languages.
+- Seven compact language fixtures and 62 regression assertions, for 117 checks across 17 fixtures.
+
+### Changed
+
+- Reused existing color families for PHP type hints, parameters, attributes and constants; Java annotations/Javadoc; C# declarations; C/C++ members; Go calls; and Rust macros, attributes, parameters and literals.
+- Aligned TextMate macro colors with the existing purple semantic macro color, and made recognized C++/Go/Rust calls upright while retaining bold declarations where grammars distinguish them.
+- Updated language coverage, testing instructions, grammar limitations, and the VSIX example for 0.2.0.
+- Preserved the workbench palette, existing semantic rules, and all five screenshots; no new screenshots were added.
+
 ## [0.1.0] - 2026-09-10
 
 ### Added

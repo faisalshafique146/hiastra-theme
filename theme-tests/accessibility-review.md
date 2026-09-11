@@ -2,7 +2,7 @@
 
 Reviewed 2026-09-09. Scope: the theme JSON and its declared colors/rules. This is a static review with calculated contrast, not a live VS Code rendering test or certification.
 
-Historical snapshot: subsequent edits changed UI borders to magenta. The 2026-09-10 release audit also changed editor selections. Do not treat the older cyan-border or selection measurements below as current. In particular, `editor.selectionForeground` is documented for high-contrast selection text; normal syntax foregrounds must be checked against the selection background as well. The new `#2A2450` selection gives muted comments 4.53:1 (previously 3.62:1 on `#3A3268`). See `../RELEASE-AUDIT.md` for the current findings.
+Historical snapshot: subsequent edits changed UI borders to magenta. The 2026-09-10 release audit also changed editor selections. Do not treat the older cyan-border or selection measurements below as current. In particular, `editor.selectionForeground` is documented for high-contrast selection text; normal syntax foregrounds must be checked against the selection background as well. The new `#2A2450` selection gives muted comments 4.53:1 (previously 3.62:1 on `#3A3268`). See `../RELEASE-AUDIT.md` for that later historical audit. The upcoming 0.2.0 update reuses this palette and leaves UI/semantic colors unchanged; its expanded language test coverage is documented in `README.md` in this folder. It is not a new live accessibility certification.
 
 ## Findings and decisions
 

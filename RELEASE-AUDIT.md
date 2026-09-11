@@ -1,5 +1,11 @@
 # HiAstra release-readiness audit
 
+Historical snapshot of the 0.1.0 preparation audit below, not a current release
+verdict. Since this review, the user supplied the GitHub repository, chose MIT,
+and added screenshots. The upcoming 0.2.0 language update expands the checker to
+117 assertions across 17 fixtures; see `README.md`, `theme-tests/README.md`, and
+the Unreleased changelog. Revalidate the final VSIX before publishing.
+
 Reviewed 2026-09-10. Verdict: **not ready for public release yet**. Publisher:
 `hi-soft-tech`; extension ID: `hi-soft-tech.hiastra-theme`; manifest version:
 `0.1.0`. No account information or license was invented, and nothing was published.

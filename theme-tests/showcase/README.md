@@ -24,10 +24,12 @@ an everyday profile. Generated profile/extension folders are ignored by Git.
 The screenshot helper, profiles, and showcase sources are excluded from VSIX;
 only the five PNGs are included for documentation.
 
-README images use relative paths for local and repository previews. Before
-Marketplace publication, replace the repository placeholders in package.json
-and README.md, upload the PNG files to the real repository, and confirm the
-packager's resolved image URLs point to accessible files on the correct branch.
-If the repository contains the outer workspace, account for the hiastra-theme
-subdirectory in those URLs. Packaging a placeholder repository does not make
-the images publicly available.
+README images use relative paths for local and repository previews. The manifest
+points to `https://github.com/faisalshafique146/hiastra-theme`. Before publication,
+confirm all five PNG files are uploaded under `images/screenshots/` and that the
+packager's resolved HTTPS image URLs open without signing in. If the repository
+layout or branch changes, update the link/image base paths before packaging.
+
+Version 0.2.0 adds PHP, Java, C#, C, C++, Go, and Rust fixtures in the parent
+`theme-tests` folder. It adds no screenshots and leaves these five screenshot
+source files and PNGs unchanged. See `../README.md` for the expanded test matrix.

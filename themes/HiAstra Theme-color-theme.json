@@ -1241,6 +1241,91 @@
 				"foreground": "#55D6E6",
 				"fontStyle": ""
 			}
+		},
+		{
+			"name": "HiAstra Neutral Unclassified Identifiers",
+			"scope": ["source.java", "source.cs", "source.c", "source.rust"],
+			"settings": { "foreground": "#C7C3DF" }
+		},
+		{
+			"name": "HiAstra PHP Types and Declaration Keywords",
+			"scope": ["keyword.other.type.php", "keyword.other.namespace.php", "keyword.other.use.php", "keyword.other.new.php"],
+			"settings": { "foreground": "#B89CFF" }
+		},
+		{
+			"name": "HiAstra PHP Parameters and Constants",
+			"scope": ["meta.function.parameters.php variable.other.php", "constant.other.php", "constant.other.class.php"],
+			"settings": { "foreground": "#FFAA68" }
+		},
+		{
+			"name": "HiAstra PHP Variable Sigils",
+			"scope": ["punctuation.definition.variable.php"],
+			"settings": { "foreground": "#55D6E6", "fontStyle": "" }
+		},
+		{
+			"name": "HiAstra PHP Attribute Names",
+			"scope": ["support.attribute.php", "support.attribute.builtin.php"],
+			"settings": { "foreground": "#F08ACB", "fontStyle": "italic" }
+		},
+		{
+			"name": "HiAstra Java Documentation",
+			"scope": ["comment.block.javadoc.java"],
+			"settings": { "foreground": "#C7C3DF", "fontStyle": "" }
+		},
+		{
+			"name": "HiAstra Java Annotations",
+			"scope": ["storage.type.annotation.java", "punctuation.definition.annotation.java"],
+			"settings": { "foreground": "#F08ACB", "fontStyle": "italic" }
+		},
+		{
+			"name": "HiAstra Import and Declaration Keywords",
+			"scope": ["keyword.other.package.java", "keyword.other.import.java", "keyword.other.directive.using.cs", "keyword.other.typedef.c", "keyword.other.rust"],
+			"settings": { "foreground": "#B89CFF" }
+		},
+		{
+			"name": "HiAstra CSharp Local Identifiers",
+			"scope": ["entity.name.variable.local.cs", "entity.name.variable.range-variable.cs"],
+			"settings": { "foreground": "#C7C3DF", "fontStyle": "" }
+		},
+		{
+			"name": "HiAstra CSharp Parameters and Members",
+			"scope": ["entity.name.variable.parameter.cs", "entity.name.variable.property.cs", "entity.name.variable.field.cs", "entity.name.variable.enum-member.cs"],
+			"settings": { "foreground": "#FFAA68", "fontStyle": "" }
+		},
+		{
+			"name": "HiAstra C and Cpp Members",
+			"scope": ["variable.other.member.c", "variable.other.member.cpp", "meta.body.struct.cpp variable.other.declare.cpp", "meta.body.class.cpp meta.declaration.cpp variable.other.declare.cpp"],
+			"settings": { "foreground": "#FFAA68" }
+		},
+		{
+			"name": "HiAstra Cpp and Go Calls",
+			"scope": ["entity.name.function.call.cpp", "entity.name.function.member.cpp", "entity.name.function.support.go", "entity.name.function.support.builtin.go"],
+			"settings": { "foreground": "#6FA8FF", "fontStyle": "" }
+		},
+		{
+			"name": "HiAstra Rust Calls",
+			"scope": ["meta.function.call.rust entity.name.function.rust"],
+			"settings": { "foreground": "#6FA8FF", "fontStyle": "" }
+		},
+		{
+			"name": "HiAstra C and Rust Macros",
+			"scope": ["entity.name.function.preprocessor.c", "entity.name.function.preprocessor.cpp", "entity.name.function.macro.rust"],
+			"settings": { "foreground": "#B89CFF", "fontStyle": "" }
+		},
+		{
+			"name": "HiAstra Rust Constants and Parameters",
+			"scope": ["constant.other.caps.rust", "meta.function.definition.rust variable.other.rust"],
+			"settings": { "foreground": "#FFAA68" }
+		},
+		{
+			"name": "HiAstra Rust Attributes",
+			"scope": ["meta.attribute.rust"],
+			"settings": { "foreground": "#F08ACB" }
+		},
+		{
+			"name": "HiAstra PHP and Rust Language Literals",
+			"scope": ["constant.language.php", "constant.language.bool.rust"],
+			"settings": { "foreground": "#F3C969" }
 		}
 	],
 	"semanticHighlighting": true,

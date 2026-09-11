@@ -47,10 +47,14 @@ async function main() {
     'react.jsx': 'source.js.jsx', 'react.tsx': 'source.tsx',
     'index.html': 'text.html.basic', 'preview.css': 'source.css',
     'sample.json': 'source.json', 'sample.py': 'source.python',
-    'sample.md': 'text.html.markdown', 'sample.sh': 'source.shell'
+    'sample.md': 'text.html.markdown', 'sample.sh': 'source.shell',
+    'sample.php': 'text.html.php', 'ThemePreview.java': 'source.java',
+    'ThemePreview.cs': 'source.cs', 'sample.c': 'source.c',
+    'sample.cpp': 'source.cpp', 'sample.go': 'source.go', 'sample.rs': 'source.rust'
   };
   const records = [];
   const only = process.argv.find(arg => arg.startsWith('--only='))?.slice(7);
+  if (only) assert.ok(files[only], `Unknown fixture: ${only}`);
   for (const [file, scope] of Object.entries(files)) {
     if (only && file !== only) continue;
     const grammar = await registry.loadGrammar(scope);
@@ -75,7 +79,10 @@ async function main() {
       }
     }
   }
-  if (process.argv.includes('--dump')) {
+  if (process.argv.includes('--dump-all')) {
+    console.log(JSON.stringify(records));
+  }
+  else if (process.argv.includes('--dump')) {
     const unique = new Map();
     for (const record of records) {
       unique.set(`${record.file}:${record.scopes.join(' ')}`, record);
@@ -140,7 +147,69 @@ async function main() {
       ['sample.sh', 'echo', 'support.function.builtin.shell', '#6FA8FF', 0],
       ['sample.sh', 'message', 'variable.other.normal.shell', '#C7C3DF'],
       ['sample.sh', '$', 'punctuation.definition.variable.shell', '#55D6E6'],
-      ['sample.sh', '$', 'variable.parameter.positional.shell', '#FFAA68']
+      ['sample.sh', '$', 'variable.parameter.positional.shell', '#FFAA68'],
+      ['sample.php', 'Swatch', 'entity.name.type.class.php', '#B89CFF', 2],
+      ['sample.php', 'string', 'keyword.other.type.php', '#B89CFF'],
+      ['sample.php', 'index', 'meta.function.parameter.typehinted.php', '#FFAA68'],
+      ['sample.php', 'enabled', 'variable.other.php', '#C7C3DF'],
+      ['sample.php', 'name', 'variable.other.property.php', '#FFAA68'],
+      ['sample.php', 'LIMIT', 'constant.other.php', '#FFAA68'],
+      ['sample.php', 'LIMIT', 'constant.other.class.php', '#FFAA68'],
+      ['sample.php', '$', 'punctuation.definition.variable.php', '#55D6E6', 0],
+      ['sample.php', 'Attribute', 'support.attribute.builtin.php', '#F08ACB', 1],
+      ['sample.php', 'label', 'meta.method-call.php', '#6FA8FF', 0],
+      ['sample.php', 'true', 'constant.language.php', '#F3C969'],
+      ['sample.php', 'title', 'string.quoted.single.php', '#72E0B2'],
+      ['sample.php', 'section', 'entity.name.tag.html', '#FF7A8A'],
+      ['ThemePreview.java', 'ThemePreview', 'entity.name.type.class.java', '#B89CFF', 2],
+      ['ThemePreview.java', 'Swatch', 'entity.name.type.record.java', '#B89CFF'],
+      ['ThemePreview.java', 'name', 'variable.parameter.java', '#FFAA68'],
+      ['ThemePreview.java', 'Deprecated', 'storage.type.annotation.java', '#F08ACB', 1],
+      ['ThemePreview.java', 'legacyLabel', 'entity.name.function.java', '#6FA8FF', 2],
+      ['ThemePreview.java', 'append', 'meta.method-call.java', '#6FA8FF', 0],
+      ['ThemePreview.java', 'import', 'keyword.other.import.java', '#B89CFF'],
+      ['ThemePreview.java', ' Store the theme name for a short preview. ', 'comment.block.javadoc.java', '#C7C3DF', 0],
+      ['ThemePreview.cs', 'ThemePreview', 'entity.name.type.class.cs', '#B89CFF', 2],
+      ['ThemePreview.cs', 'Name', 'entity.name.variable.property.cs', '#FFAA68', 0],
+      ['ThemePreview.cs', 'Limit', 'entity.name.variable.field.cs', '#FFAA68', 0],
+      ['ThemePreview.cs', 'swatches', 'entity.name.variable.parameter.cs', '#FFAA68', 0],
+      ['ThemePreview.cs', 'index', 'entity.name.variable.local.cs', '#C7C3DF', 0],
+      ['ThemePreview.cs', 'Label', 'variable.other.object.property.cs', '#FFAA68'],
+      ['ThemePreview.cs', 'Render', 'entity.name.function.cs', '#6FA8FF', 2],
+      ['ThemePreview.cs', 'true', 'constant.language.boolean.true.cs', '#F3C969'],
+      ['sample.c', 'LIMIT', 'entity.name.function.preprocessor.c', '#B89CFF', 0],
+      ['sample.c', 'typedef', 'keyword.other.typedef.c', '#B89CFF'],
+      ['sample.c', 'render', 'meta.function.definition.parameters.c', '#6FA8FF', 2],
+      ['sample.c', 'render', 'meta.function-call.c', '#6FA8FF', 0],
+      ['sample.c', 'count', 'variable.parameter.probably.c', '#FFAA68'],
+      ['sample.c', 'label', 'variable.other.member.c', '#FFAA68'],
+      ['sample.c', '#72E0B2', 'string.quoted.double.c', '#72E0B2'],
+      ['sample.cpp', 'Palette', 'entity.name.type.class.cpp', '#B89CFF', 2],
+      ['sample.cpp', 'Swatch', 'entity.name.type.struct.cpp', '#B89CFF'],
+      ['sample.cpp', 'Vibrant', 'variable.other.enummember.cpp', '#FFAA68'],
+      ['sample.cpp', 'label', 'variable.other.declare.cpp', '#FFAA68'],
+      ['sample.cpp', 'title', 'variable.parameter.cpp', '#FFAA68'],
+      ['sample.cpp', 'render', 'entity.name.function.definition.cpp', '#6FA8FF', 2],
+      ['sample.cpp', 'render', 'entity.name.function.member.cpp', '#6FA8FF', 0],
+      ['sample.cpp', '#72E0B2', 'string.quoted.double.cpp', '#72E0B2'],
+      ['sample.go', 'Swatch', 'entity.name.type.go', '#B89CFF'],
+      ['sample.go', 'Label', 'variable.other.property.go', '#FFAA68'],
+      ['sample.go', 'limit', 'variable.other.constant.go', '#FFAA68'],
+      ['sample.go', 'index', 'variable.parameter.go', '#FFAA68'],
+      ['sample.go', 'Format', 'entity.name.function.go', '#6FA8FF', 2],
+      ['sample.go', 'Format', 'entity.name.function.support.go', '#6FA8FF', 0],
+      ['sample.go', 'make', 'entity.name.function.support.builtin.go', '#6FA8FF', 0],
+      ['sample.go', 'true', 'constant.language.boolean.go', '#F3C969'],
+      ['sample.rs', 'Swatch', 'entity.name.type.struct.rust', '#B89CFF'],
+      ['sample.rs', 'a', 'entity.name.type.lifetime.rust', '#B89CFF'],
+      ['sample.rs', 'LIMIT', 'constant.other.caps.rust', '#FFAA68'],
+      ['sample.rs', 'formatter', 'meta.function.definition.rust', '#FFAA68'],
+      ['sample.rs', 'render', 'meta.function.definition.rust', '#6FA8FF', 2],
+      ['sample.rs', 'render', 'meta.function.call.rust', '#6FA8FF', 0],
+      ['sample.rs', 'format!', 'entity.name.function.macro.rust', '#B89CFF', 0],
+      ['sample.rs', 'derive', 'meta.attribute.rust', '#F08ACB'],
+      ['sample.rs', 'Debug', 'entity.name.type.rust', '#B89CFF'],
+      ['sample.rs', 'true', 'constant.language.bool.rust', '#F3C969']
     ].filter(([file]) => !only || file === only);
     for (const [file, text, scope, color, style] of checks) {
       const matches = records.filter(r => r.file === file && r.text === text &&

@@ -37,7 +37,7 @@ These instructions apply once the extension is published.
 Alternatively, if the `code` command is available in your terminal:
 
 ```sh
-code --install-extension "path/to/hiastra-theme-0.1.0.vsix"
+code --install-extension "path/to/hiastra-theme-0.2.0.vsix"
 ```
 
 Replace the example path and version with your actual file. See VS Code's [installation guide](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#install-from-a-vsix) and [theme selection guide](https://code.visualstudio.com/docs/configure/themes).
@@ -58,21 +58,43 @@ Language extensions supply semantic information, so the available highlighting c
 
 ## Language coverage
 
-HiAstra includes language-specific TextMate styling and test fixtures for:
+HiAstra's core language fixtures cover **10 programming languages**: JavaScript,
+TypeScript, Python, Java, C#, C, C++, Go, Rust, and PHP. This is a practical
+cross-platform selection, not a claim about a particular popularity ranking.
 
-- JavaScript and TypeScript
-- React JSX and TSX
-- HTML and CSS
-- JSON and Python
-- Markdown and Bash/shell scripts
+| Languages | Highlighting focus |
+| --- | --- |
+| JavaScript / TypeScript | Object keys, functions, classes, interfaces, generics, and parameters |
+| Python | Decorators, docstrings, calls, attributes, and constants |
+| PHP | Type hints, promoted properties, parameters, constants, attributes, and embedded HTML |
+| Java | Classes, records, generics, annotations, Javadoc, and method calls |
+| C# | Types, local variables, parameters, fields, properties, and interpolation |
+| C / C++ | Preprocessor macros, recognized types, templates, members, and function calls |
+| Go | Structs, fields, receivers, parameters, built-in calls, and constants |
+| Rust | Traits, lifetimes, parameters, constants, macros, attributes, and calls |
 
-The regression suite checks 55 color/style cases across these ten fixtures using the development installation's bundled VS Code grammars. This verifies TextMate output, not every language extension or semantic provider. Other languages receive the theme's shared scope styles, but have not received the same focused testing.
+Existing **React JSX/TSX, HTML, CSS, JSON, Markdown, and Bash/shell** coverage is
+also retained. The regression suite checks **117 color/style cases across 17
+fixtures** using VS Code 1.137.0's bundled grammars, including the original 55
+checks. These are TextMate tests, not compilation tests or certification of every
+language server. Other languages receive the shared scope styles.
+
+The theme does not install compilers or language extensions. For richer semantic
+highlighting, enable the appropriate language extension for your project. Shared
+semantic colors stay aligned with TextMate: purple types/macros, blue functions,
+orange parameters/properties/constants, and neutral variables. Grammar limitations
+remain: PHP array keys can be ordinary strings; C types, Go field references, and
+Rust fields may need semantic information; C# TextMate does not always distinguish
+calls from declarations or attributes from types. See the
+[fixture notes](https://github.com/faisalshafique146/hiastra-theme/blob/HEAD/theme-tests/README.md)
+and VS Code's [semantic highlighting guide](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide).
 
 See the [visual test fixtures in the repository](https://github.com/faisalshafique146/hiastra-theme/tree/HEAD/theme-tests) for what to inspect; development fixtures are not included in the VSIX. Markdown styling refers to the source editor, not the rendered preview. HiAstra supplies colors, not language servers or diagnostics.
 
 ## Screenshots
 
 Captured in VS Code's Extension Development Host using the current HiAstra theme.
+The original five screenshots are retained; this language-coverage update adds no new screenshots.
 These are real editor screenshots, not mockups or color-enhanced images. The
 capture profile uses Consolas at 17 px, 24 px line height, no file-icon theme,
 and no minimap or color-decorator swatches. Semantic highlighting is configured
